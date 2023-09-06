@@ -1,0 +1,472 @@
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+.main{
+    width: 100%;
+}
+header .topnav{
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+    font-size: 15px;
+    color: white;
+    background-color: #3e54a3;
+    height: 30px;
+    font-family: Heebo, sans-serif;
+    font-weight: bold;
+}
+header .topnav i{
+    margin-top: 2px;
+}
+header .topnav a{
+    color: white;
+}
+header .topnav a:hover{
+    text-decoration: none;    
+}
+header .bottomnav{
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    /* border: 2px solid black; */
+}
+header .bottomnav img{
+    margin-left: 60px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+}
+header .bottomnav .navindex{
+    display: flex;
+    width: 550px;   
+    padding: 15px 0px;
+}
+header .bottomnav .navindex a{
+    color: black;
+    margin: 5px 10px;
+    font-size:12px;
+    font-weight: bold;
+    font-family: Barlow, sans-serif;
+    font-style: italic;
+    text-decoration: none;
+    position: relative;
+}
+header .bottomnav .navindex > a{
+    margin-top: 8px;
+}
+/* ------------------------------------------------- */
+header .bottomnav .navindex > a:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    top: 15px;
+    background-color: black;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  header .bottomnav .navindex > a:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+/* ------------------------------------------------- */
+header .bottomnav .navindex .git .github{
+    padding: 13px 20px;
+    background-color: #1c2022;
+    color: white;
+    border-radius: 50px;
+    text-decoration: none;
+}
+header .bottomnav .navindex .git .github span{
+    font-size: 12px;
+}
+header .bottomnav .navindex .git .github i{  
+    font-size: 20px;
+}
+header .bottomnav .navindex .git .github:active{
+    border: 3px dotted lightblue;
+}
+
+/* sticknav */
+
+.sticknav{
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    border: 0.1px solid rgb(219, 229, 230);
+    position: sticky;
+    top:0;
+    background-color: white;
+    z-index: 1000;
+    
+}
+.sticknav .rightIndex{
+    display: flex;
+}
+.sticknav .nameActiveIndex{
+    width: 140px;
+    padding-left: 40px;
+    padding-top: 12px;
+    margin-left: 50px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border-left:0.1px solid rgb(219, 229, 230);
+    border-right:0.1px solid rgb(219, 229, 230);
+}
+.sticknav button{
+    width: 140px;
+    padding: 17px;
+    border-left:0.1px solid rgb(219, 229, 230);
+    border-right:0.1px solid rgb(219, 229, 230);
+    background-color: white;
+    font-family: Barlow, sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    letter-spacing: 1px;
+}
+.filter{
+    margin-right: 50px;
+}
+.sticknav button span{
+    font-size: 11px;
+}
+.sticknav .line{
+    width: 2px;
+    height: 100%;
+    border-right:0.1px solid rgb(219, 229, 230);
+    margin-right: 10px;
+}
+.sticknav button:active{
+    border: 3px dotted lightblue;
+}
+.carddiv{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 25px;
+    margin: 80px 5%;
+}
+.carddiv .card{
+    width: 100%;
+    border: 0.1px solid rgb(223, 222, 222);
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+.carddiv .card img{
+    width: 100%;
+    height: 250px;
+    transition: all 0.3s ease-out; 
+}
+
+.carddiv .card img:hover{
+    transform: scale(1.05);
+}
+.carddiv .card .write{
+    width: 100%;
+    height: 250px;
+    margin-top: -5px;
+    background-color: white;
+    font-family: Barlow, sans-serif;
+    z-index: 100;
+}
+.carddiv .card .write h2{
+    padding-left: 20px;
+    margin-top: 20px;
+    font-size: 21px;
+    font-weight: 100;
+}
+.carddiv .card .write h2 a{
+    text-decoration: none;
+    color: black;
+}
+.carddiv .card .write h2 a:hover{
+    text-decoration: underline;
+}
+
+/* write texts */
+
+.carddiv .card .write .htmlcss{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    /* border: 2px solid yellow; */
+}
+.carddiv .card .write .htmlcss .lefthtml{
+    width: 40%;
+    display: flex;
+    font-weight: bold;
+    justify-content: space-between;
+    margin-left: 20px;
+    /* border: 2px solid black; */
+}
+
+.carddiv .card .write .htmlcss .righthtml{
+    display: flex;
+    margin-right: 20px;
+    width: 130px;
+    height: 19px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.ht{
+    color: #6abecd;
+}
+.cs{
+    color: rgb(62, 84, 163);
+}
+.js{
+    color: rgb(207, 99, 144);
+}
+.guru{
+    width: 15px;
+    padding-left: 7px;
+    color: white;
+    padding-top: 2px;
+    font-size: 14px;
+    background-color: rgb(237, 44, 73);
+}
+.nguru{
+    font-size: 14px;
+    font-weight: bold;
+    padding-top: 2px;
+    padding-right: 5px;
+    color:rgb(237, 44, 73);
+}
+.junior{
+    width: 8px;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: white;
+    padding-top: 2px;
+    font-size: 14px;
+    background-color: rgb(170, 215, 66);
+}
+.njunior{
+    font-size: 14px;
+    font-weight: bold;
+    padding-top: 2px;
+    /* padding-right: 15px; */
+    margin-right: 5px;
+    color:rgb(170, 215, 66);
+}
+.newbie{
+    width: 14px;
+    padding-left: 7px;
+    color: white;
+    padding-top: 2px;
+    font-size: 14px;
+    background-color: rgb(106, 190, 205);
+}
+.nnewbie{
+    font-size: 14px;
+    font-weight: bold;
+    padding-top: 2px;
+    padding-right: 5px;
+    color:rgb(106, 190, 205);
+}
+.intermediate{
+    width: 14px;
+    padding-left: 5px;
+    color: white;
+    padding-top: 2px;
+    font-size: 14px;
+    background-color: rgb(241, 182, 4);
+}
+.nintermediate{
+    font-size: 14px;
+    font-weight: bold;
+    padding-top: 2px;
+    padding-right: 5px;
+    color:rgb(241, 182, 4);
+}
+.advanced{
+    width: 14px;
+    padding-left: 7px;
+    color: white;
+    padding-top: 2px;
+    font-size: 14px;
+    background-color: rgb(244, 137, 37);
+}
+.nadvanced{
+    font-size: 14px;
+    font-weight: bold;
+    padding-top: 2px;
+    padding-right: 5px;
+    color:rgb(244, 137, 37);
+}
+.carddiv .card .write .des{
+overflow-wrap: break-word;
+width: 90%;
+padding: 30px 20px;
+font-size: 15px;
+color: rgb(114, 114, 114);
+}
+.discord{
+    color: white;
+    width: 96%;
+    /* height: 415.648px; */
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    padding-top: 80px;
+    /* line-height: 120px; */
+    border-radius: 10px;
+    margin: 120px 2%;
+    background-color: #4f60ab;
+}
+.discord .disicon{
+    display: flex;
+    width: 140px;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    
+}
+.disicon i{
+    font-size: 35px;
+}
+.disicon p{
+    font-size: 20px;
+    font-weight: 900;
+}
+.discord h3{
+    font-family: Barlow, sans-serif;
+    margin: 60px 0px;
+}
+.discord p{
+    font-size: 28px;
+    text-align: center;
+    line-height: 1;
+    font-family: Barlow, sans-serif;
+    padding: 0 10%;
+}
+.discord a{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: white;
+    border-radius: 10rem;
+    width: 200px;
+    font-weight: 700;
+    text-decoration: none;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-family: Barlow, sans-serif;
+    font-style: italic;
+    color: #3e54a3;
+    
+}
+.discord a:hover{
+    scale: 1.01;
+}
+
+/* ------------footer--------- */
+footer .linklogo{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 150px;
+    margin-bottom: 50px;
+    
+}
+footer .linklogo .link{
+    word-spacing: 30px;
+    font-size: 25px;
+    margin-right: 50px;
+}
+footer .linklogo .link a{
+    color:rgb(106, 190, 205);
+}
+footer .linklogo .logo{
+    margin-left: 50px;
+}
+.detailfoot{
+    display: flex;
+    height: 230px;
+}
+.detailfoot .leftfoot{
+    width: 40%;
+}
+.detailfoot .rightfoot{
+    width: 60%;
+    /* border: 2px solid red; */
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+
+    font-family: Heebo, sans-serif;
+}
+.detailfoot .rightfoot .det p{
+    color: rgb(158, 157, 157);  
+    margin-top: 8px;  
+    font-size: 14px;
+}
+.detailfoot .rightfoot .det a:hover{
+    text-decoration: 0.1px grey underline;
+}
+.detailfoot .rightfoot .det h4{
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    /* font-size: 14px; */
+}
+.detailfoot .rightfoot .det a{
+    text-decoration: none;
+}
+.detailfoot .leftfoot h2{
+    color: rgb(62, 84, 163);
+    font-family: Barlow, sans-serif;
+    font-weight: 400;
+    margin-left: 40px;
+    
+}
+.detailfoot .leftfoot p{
+    font-weight: thin;
+    font-family: Heebo, sans-serif;
+    margin-left: 40px;
+    max-width: 300px;
+    margin-top: 20px;
+}
+.detailfoot .leftfoot input{
+    max-width: 240px;
+    margin-left: 40px;
+    border: 0.1px solid rgb(217, 216, 216);
+    height: 35px;
+    margin-top: 30px;
+    border-radius: 3px;
+}
+.detailfoot .leftfoot input::placeholder{
+    font-size: 16px;
+    padding-left: 5px;
+    color: grey;
+    
+}
+.detailfoot .leftfoot button{
+    width: 150px;
+    height: 40px;
+    border-radius: 50px;
+    background-color: rgb(237, 44, 73);
+    font-weight: 700;
+    font-style: italic;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+.detailfoot .leftfoot button:hover{
+    background-color: rgb(164, 34, 53);
+}
+
+
+
+
+
+
