@@ -437,7 +437,7 @@ footer .linklogo .logo{
     margin-top: 20px;
 }
 .detailfoot .leftfoot input{
-    max-width: 240px;
+    max-width: 40%;
     margin-left: 40px;
     border: 0.1px solid rgb(217, 216, 216);
     height: 35px;
@@ -464,7 +464,6 @@ footer .linklogo .logo{
 .detailfoot .leftfoot button:hover{
     background-color: rgb(164, 34, 53);
 }
-
 
 
 
